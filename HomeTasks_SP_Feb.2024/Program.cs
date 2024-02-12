@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace HomeTasks_SP_Feb._2024
+namespace HomeTasks_SP_Feb_2024
 {
     internal class Program
     {
@@ -14,9 +14,10 @@ namespace HomeTasks_SP_Feb._2024
             int symb = 0;
             for(int i=0; a!=2;i++)
             {
-                if (i == str.Length - 1)
+                if (i == str.Length)
                 {
                     MyNewMessageBoxMethod(new IntPtr(0), $" AVG Symbol Quantity per Sheet: {symb/(i+1)}", "Mr Ivanov", 1);
+                    return;
                 }
                 else 
                     a=MyNewMessageBoxMethod(new IntPtr(0), str[i], "Mr Ivanov", 1);
